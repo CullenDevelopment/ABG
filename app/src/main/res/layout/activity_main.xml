@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+
+        <TextView
+            android:id="@+id/header1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arterial"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header1"
+            android:text="@string/gas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/oxygen_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fiO2"
+            android:layout_below="@id/header2"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <EditText
+            android:id="@+id/oxygen_editview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/header2"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:background="@color/white"
+            android:hint= "@string/fio2_hint"
+            android:gravity="center"
+            android:inputType="text|numberDecimal"
+            android:layout_marginTop="@dimen/default_margin"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/oxygen_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/percent"
+            android:layout_below="@id/header2"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"
+            android:lines="2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/pH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pH"
+            android:layout_below="@id/oxygen_text"
+            android:layout_marginStart="@dimen/quad_default_margin"
+            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/ph_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pH_range"
+            android:layout_below="@id/oxygen_percent"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/ph_editview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/oxygen_editview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:background="@color/white"
+            android:hint= "@string/pH"
+            android:inputType="text|numberDecimal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/edittext_margin_special"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/paO2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partial_O2"
+            android:layout_below="@id/pH"
+            android:layout_marginStart="@dimen/quad_default_margin"
+            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/paO2_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partial_O2_range"
+            android:layout_below="@id/ph_range"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/paO2_editview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ph_editview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:background="@color/white"
+            android:hint= "@string/pao2"
+            android:inputType="text|numberDecimal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/edittext_margin_special"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/paCO2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partial_CO2"
+            android:layout_below="@id/paO2_text"
+            android:layout_marginStart="@dimen/quad_default_margin"
+            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/paCO2_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partial_CO2_range"
+            android:layout_below="@id/paO2_range"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/tri_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/paCO2_editview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/paO2_editview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:background="@color/white"
+            android:hint= "@string/paco2"
+            android:gravity="center"
+            android:inputType="text|numberDecimal"
+            android:layout_marginTop="@dimen/edittext_margin_special"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:id="@+id/hco3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hco3_text"
+            android:layout_below="@id/paCO2_text"
+            android:layout_marginStart="@dimen/quad_default_margin"
+            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/hco3_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hco3_range"
+            android:layout_below="@id/paCO2_range"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/tri_default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/hco3_editview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/paCO2_editview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:background="@color/white"
+            android:hint= "@string/hco3"
+            android:gravity="center"
+            android:inputType="text|numberDecimal"
+            android:layout_marginTop="@dimen/edittext_margin_special"
+            android:importantForAutofill="no" />
+
+
+        <ImageView
+            android:id="@+id/analyse_image"
+            android:layout_width="@dimen/round_button_size"
+            android:layout_height="@dimen/round_button_size"
+            android:src="@drawable/analyse_round"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/hco3_editview"
+            android:onClick="analyse_button"
+            android:layout_marginTop="@dimen/edittext_margin_special"
+            android:layout_marginBottom="@dimen/quad_default_margin"
+            android:contentDescription="@string/analyse_button" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

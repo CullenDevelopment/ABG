@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/analyse_header1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arterial"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/analyse_header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/analyse_header1"
+            android:text="@string/gas_analysis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/preamble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/analyse_header2"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:text="@string/pre_amble"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/hypoxia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preamble"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white"
+            android:textSize="@dimen/large_text_size" />
+
+        <TextView
+            android:id="@+id/a_a_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hypoxia"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/ph_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_a_gradient"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/ph_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ph_textview"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/paco2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ph_textview2"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/hco3_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paco2_textview"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/conclusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hco3_textview"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginLeft="@dimen/default_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:layout_marginBottom="@dimen/quad_default_margin"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/analyse_image"
+            android:layout_width="@dimen/round_button_size"
+            android:layout_height="@dimen/round_button_size"
+            android:src="@drawable/back"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/conclusion"
+            android:onClick="back_button"
+            android:layout_marginBottom="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:contentDescription="@string/analyse_button" />
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
